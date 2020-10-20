@@ -1,0 +1,21 @@
+<?xml version="1.0"
+      encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:ShellDemoApp.ViewModels.DeepPath;assembly=ShellDemoApp"
+             x:Class="ShellDemoApp.Views.DeepPath.First">
+    <ContentPage.BindingContext>
+        <viewModels:FirstViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello, This is first, top, page, now you can navigate deeper!"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Image
+                Source="https://i.kym-cdn.com/photos/images/newsfeed/000/531/557/a88.jpg"/>
+            <Button Text="Show Next Page" Command="{Binding NextPageCommand}"/>
+            <Button Text="Show Last Page" Command="{Binding LastPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,8 +1,5 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 using ShellDemoApp.Services;
-using ShellDemoApp.Views;
 
 namespace ShellDemoApp
 {

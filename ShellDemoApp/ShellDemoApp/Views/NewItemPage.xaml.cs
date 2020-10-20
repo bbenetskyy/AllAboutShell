@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
+﻿using Xamarin.Forms;
 using ShellDemoApp.Models;
 using ShellDemoApp.ViewModels;
 

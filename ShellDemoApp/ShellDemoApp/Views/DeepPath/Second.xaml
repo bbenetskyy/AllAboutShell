@@ -1,0 +1,18 @@
+<?xml version="1.0"
+      encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:ShellDemoApp.ViewModels.DeepPath;assembly=ShellDemoApp"
+             x:Class="ShellDemoApp.Views.DeepPath.Second">
+    <ContentPage.BindingContext>
+        <viewModels:FirstViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello, this is Second Page!"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Button Text="Show Next Page" Command="{Binding NextPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

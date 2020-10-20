@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using ShellDemoApp.ViewModels;
-using ShellDemoApp.Views;
+﻿using ShellDemoApp.Views;
 using Xamarin.Forms;
 
 namespace ShellDemoApp

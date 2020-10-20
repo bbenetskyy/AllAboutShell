@@ -1,6 +1,6 @@
-﻿using System;
-using System.Windows.Input;
-using Xamarin.Essentials;
+﻿using System.Windows.Input;
+using ShellDemoApp.Views;
+using ShellDemoApp.Views.DeepTabs;
 using Xamarin.Forms;
 
 namespace ShellDemoApp.ViewModels
@@ -10,9 +10,11 @@ namespace ShellDemoApp.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamain-quickstart"));
+            LogOutCommand = new Command( () => Shell.Current.GoToAsync($"//{nameof(LoginPage)}"));
+            ShowFlyoutCommand = new Command(() => Shell.Current.GoToAsync($"///{nameof(TabOne)}"));
         }
 
-        public ICommand OpenWebCommand { get; }
+        public ICommand LogOutCommand { get; }
+        public ICommand ShowFlyoutCommand { get; }
     }
 }

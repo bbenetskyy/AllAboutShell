@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ShellDemoApp.Models
+﻿namespace ShellDemoApp.Models
 {
     public class Item
     {
