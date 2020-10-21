@@ -51,32 +51,38 @@
     
     <ShellContent
         Route               ="LoginPage"
+        Shell.FlyoutBehavior="Disabled"
         ContentTemplate     ="{DataTemplate local:LoginPage}" />
     
-    <!-- <TabBar> -->
-    <!--     <ShellContent -->
-    <!--         Title          ="About" -->
-    <!--         Icon           ="tab_about.png" -->
-    <!--         Route          ="AboutPage" -->
-    <!--         ContentTemplate="{DataTemplate local:AboutPage}" /> -->
-    <!--     <ShellContent -->
-    <!--         Title          ="Browse" -->
-    <!--         Icon           ="tab_feed.png" -->
-    <!--         ContentTemplate="{DataTemplate local:ItemsPage}" /> -->
-    <!-- </TabBar> -->
+    <TabBar>
+        <ShellContent
+            Title          ="About"
+            Icon           ="tab_about.png"
+            Route          ="AboutPage"
+            ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent
+            Title          ="Browse"
+            Icon           ="tab_feed.png"
+            ContentTemplate="{DataTemplate local:ItemsPage}" />
+    </TabBar>
     
     <FlyoutItem Title="Tabs">
-        <Tab Title="Left">
-            <ShellContent Title="One" ContentTemplate="{DataTemplate tabs:TabOne}"/>
-            <ShellContent Title="Two" ContentTemplate="{DataTemplate tabs:TabTwo}"/>
-            <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}"/>
+        <Tab Title="Left" Icon="tab_about.png">
+            <ShellContent Title="One" ContentTemplate="{DataTemplate tabs:TabOne}" Route="TabOne"/>
+            <ShellContent Title="Two" ContentTemplate="{DataTemplate tabs:TabTwo}" Route="TabTwo"/>
+            <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}" Route="TabThree"/>
+            <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}" Route="TabFour"/>
         </Tab>
-        <Tab Title="Right">
-            <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}"/>
-            <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}"/>
+        <Tab Title="Right" Icon="tab_feed.png">
+            <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}" Route="RightTabThree"/>
+            <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}" Route="RightTabFour"/>
         </Tab>
     </FlyoutItem>
     
     <FlyoutItem Title="Pages">
+        <ShellContent
+            Route               ="LoginPage"
+            Shell.FlyoutBehavior="Disabled"
+            ContentTemplate     ="{DataTemplate local:LoginPage}" />
     </FlyoutItem>
 </Shell>
