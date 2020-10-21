@@ -50,19 +50,19 @@
     </Shell.Resources>
     
     <ShellContent
-        Route               ="LoginPage"
+        Route="LoginPage"
         Shell.FlyoutBehavior="Disabled"
-        ContentTemplate     ="{DataTemplate local:LoginPage}" />
+        ContentTemplate="{DataTemplate local:LoginPage}" />
     
     <TabBar>
         <ShellContent
-            Title          ="About"
-            Icon           ="tab_about.png"
-            Route          ="AboutPage"
+            Title="About"
+            Icon="tab_about.png"
+            Route="AboutPage"
             ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent
-            Title          ="Browse"
-            Icon           ="tab_feed.png"
+            Title="Browse"
+            Icon="tab_feed.png"
             ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
     
@@ -81,8 +81,7 @@
     
     <FlyoutItem Title="Pages">
         <ShellContent
-            Route               ="LoginPage"
-            Shell.FlyoutBehavior="Disabled"
-            ContentTemplate     ="{DataTemplate local:LoginPage}" />
+            Route="First"
+            ContentTemplate="{DataTemplate path:First}" />
     </FlyoutItem>
 </Shell>

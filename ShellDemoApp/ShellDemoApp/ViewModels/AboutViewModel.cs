@@ -10,8 +10,8 @@ namespace ShellDemoApp.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            LogOutCommand = new Command( () => Shell.Current.GoToAsync($"//{nameof(LoginPage)}"));
             ShowFlyoutCommand = new Command(() => Shell.Current.GoToAsync($"//{nameof(TabOne)}"));
+            LogOutCommand = new Command( () => Shell.Current.GoToAsync($"///{nameof(LoginPage)}"));
         }
 
         public ICommand LogOutCommand { get; }

@@ -10,9 +10,11 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Hello, This is first, top, page, now you can navigate deeper!"
-                   VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
             <Image
+                HeightRequest="200"
+                WidthRequest="400"
+                Aspect="AspectFit"
                 Source="https://i.kym-cdn.com/photos/images/newsfeed/000/531/557/a88.jpg"/>
             <Button Text="Show Next Page" Command="{Binding NextPageCommand}"/>
             <Button Text="Show Last Page" Command="{Binding LastPageCommand}"/>
