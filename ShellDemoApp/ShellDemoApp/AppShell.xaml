@@ -64,6 +64,16 @@
             Title="Browse"
             Icon="tab_feed.png"
             ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <!-- <Tab Title="Left" Icon="tab_about.png"> -->
+        <!--     <ShellContent Title="One" ContentTemplate="{DataTemplate tabs:TabOne}" Route="TabOne"/> -->
+        <!--     <ShellContent Title="Two" ContentTemplate="{DataTemplate tabs:TabTwo}" Route="TabTwo"/> -->
+        <!--     <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}" Route="TabThree"/> -->
+        <!--     <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}" Route="TabFour"/> -->
+        <!-- </Tab> -->
+        <!-- <ShellSection Title="Right" Icon="tab_feed.png"> -->
+        <!--          <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}" Route="RightTabThree"/> -->
+        <!--          <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}" Route="RightTabFour"/> -->
+        <!-- </ShellSection> -->
     </TabBar>
     
     <!-- <TabBar> -->
@@ -91,6 +101,10 @@
             <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}" Route="RightTabThree"/>
             <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}" Route="RightTabFour"/>
         </Tab>
+        <!-- <ShellSection Title="Right" Icon="tab_feed.png"> -->
+        <!--     <ShellContent Title="Three" ContentTemplate="{DataTemplate tabs:TabThree}" Route="RightTabThree"/> -->
+        <!--     <ShellContent Title="Four" ContentTemplate="{DataTemplate tabs:TabFour}" Route="RightTabFour"/> -->
+        <!-- </ShellSection> -->
     </FlyoutItem>
     
     <FlyoutItem Title="Pages">
