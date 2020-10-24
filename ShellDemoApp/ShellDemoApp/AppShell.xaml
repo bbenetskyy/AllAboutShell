@@ -66,6 +66,20 @@
             ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
     
+    <!-- <TabBar> -->
+    <!--     <Tab Title="Left" Icon="tab_about.png"> -->
+    <!--     <ShellContent -->
+    <!--         Title="About" -->
+    <!--         Icon="tab_about.png" -->
+    <!--         Route="AboutPage" -->
+    <!--         ContentTemplate="{DataTemplate local:AboutPage}" /> -->
+    <!--     <ShellContent -->
+    <!--         Title="Browse" -->
+    <!--         Icon="tab_feed.png" -->
+    <!--         ContentTemplate="{DataTemplate local:ItemsPage}" /> -->
+    <!--     </Tab> -->
+    <!-- </TabBar> -->
+    
     <FlyoutItem Title="Tabs">
         <Tab Title="Left" Icon="tab_about.png">
             <ShellContent Title="One" ContentTemplate="{DataTemplate tabs:TabOne}" Route="TabOne"/>
